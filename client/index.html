@@ -1,0 +1,21 @@
+<head>
+ 
+</head>
+ 
+<body>
+  <header>
+    {{> header}}
+  </header>
+  {{> content}}
+  <footer>
+    {{> footer}}
+  </footer>
+</body>
+ 
+<template name="content">
+  {{#if currentUser}}
+    {{> column}}
+  {{else}}
+    {{> homecontent}}
+  {{/if}}
+</template>
